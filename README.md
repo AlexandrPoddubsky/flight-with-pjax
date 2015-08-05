@@ -19,7 +19,7 @@ define('component_ui/route', [
         function newComponent() {
 
             this.after('initialize', function() {
-                this.on('touchend click', this.click);
+                this.on('touchend click', this.nodeClicked);
 
                 this.on('pjax:loading', this.loading);
                 this.on('pjax:complete', this.complete);
@@ -63,12 +63,22 @@ require([
 
 ## Documentation
 
+### this.getCurrentURL();
+
+Returns current  page URL.
+
+### this.nodeClicked(ev);
+
+Used to trigger the load page method.
+
+- **ev** event
+
 ### this.navigate(URL, [boolean]);
 
 - **URL** is url like string. Must start from '/'.
 - **Boolean** if passed state would not be pushed, but replaced, to save history clean.
 
-### this.load(url, [args])
+### this.loadPage(url, [args])
 
 This will perform an Ajax call to load the page.
 
@@ -90,6 +100,17 @@ The animation for the container when being displayed.
 ```
 Param that tells fire new state any way even if URL is same.
 
+### this.disablePopstate();
+
+Sometimes there might be a need to disable the built in popstate event.
+
+### this.enablePopstate();
+
+Used to re-enable the popstate event.
+
+### this.replaceParams(Array);
+
+- **Array** an array of paramaters to append/remove/replace from the current url.
 
 ## CSS for container animation
 
