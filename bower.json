@@ -17,6 +17,15 @@
   "ignore": [
     ".gitignore",
     ".gitattributes",
-    "package.json"
+    "package.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.1",
+  "authors": [
+    "Daniel Stainback <torann@gmail.com>"
   ]
 }

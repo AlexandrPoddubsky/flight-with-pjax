@@ -120,3 +120,7 @@ Where `.content-wrapper` is the classname of your `container`.
   transform: translate3d(100%, 0, 0);
 }
 ```
+
+## Using Laravel
+
+Checkout the [Laravel Pjax Middleware](https://packagist.org/packages/torann/laravel-pjax-middleware) package.
