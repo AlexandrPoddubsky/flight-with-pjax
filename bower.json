@@ -1,0 +1,22 @@
+{
+  "name": "flight-with-pjax",
+  "description": "Easily enable fast Ajax navigation on any FlightJS app.",
+  "keywords": [
+    "flight",
+    "flightjs",
+    "pjax",
+    "pushState",
+    "popstate"
+  ],
+  "homepage": "https://github.com/Torann/flight-with-pjax",
+  "license": "BSD 2-Clause",
+  "main": "lib/with-pjax.js",
+  "dependencies": {
+    "flight": "^1.2.0"
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    "package.json"
+  ]
+}
