@@ -65,15 +65,15 @@ require([
 
 ### this.navigate(URL, [boolean]);
 
-**URL** is url like string. Must start from '/'.
-**Boolean** if passed state would not be pushed, but replaced, to save history clean.
+- **URL** is url like string. Must start from '/'.
+- **Boolean** if passed state would not be pushed, but replaced, to save history clean.
 
 ### this.load(url, [args])
 
 This will perform an Ajax call to load the page.
 
-**URL** is url like string. Must start from '/'.
-**Args** is optional object with following params:
+- **URL** is url like string. Must start from '/'.
+- **Args** is optional object with following params:
 
 ```js
     replaceState: Boolean
