@@ -1,6 +1,6 @@
 {
   "name": "flight-with-pjax",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "Easily enable fast Ajax navigation on any FlightJS app",
   "main": "lib/with-state.js",
   "scripts": {
