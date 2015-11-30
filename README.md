@@ -52,12 +52,16 @@ require([
     pjax.attachTo(document.body, {
         defaultAnimation: 'fade',
         container: '.content-wrapper',
+        ignore: [
+            'data-modal',             // Skip elements with the data attribute model
+            'data-toggle:slidePanel'  // Skip elements with the data attribute toggle with the value slidePanel
+        ],
         selectors: [
             '.flash-messages',
             '.nav-bar'
         ]
     });
-    
+
 });
 ```
 
